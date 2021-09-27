@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-2</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Ressort bill</h1>
+
+
+
+    <script>
+
+        var cost=100;
+        var days=5;
+        var a=cost*10;
+        var a2=cost-cost/100*20;
+        var a3=days-10;
+        var a4=a3*a2;
+        var b=a2*10;
+        var b2=cost-cost/100*50;
+        var b3=days-20;
+        var b4=b3*b2;
+        var b5=a+b
+        document.write(b5 + '<br>');
+        document.write((b4+b5) + '<br>');
+        document.write((a+a4) + '<br>');
+        if(days<=10){
+            document.write("You stayed :" + days + 'day'+ '<br>');
+            document.write('Your total cost is :'+ cost*days + 'Taka' + '<br>');
+        }
+        if(10<days<21){
+            document.write('You stayed :' + days + 'day' + '<br>');
+            document.write('your total cost is :' + (a+a4) + 'Taka' + '<br>');
+        }
+        if(days=>21){
+            document.write('You stayed :' + days + 'day' + '<br>');
+            document.write('Your total cost :' + (b4+b5) + 'Taka')
+        }
+    </script>
+</body>
+</html>
